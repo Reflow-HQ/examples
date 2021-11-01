@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.1/dist/litera/bootstrap.min.css" />
+    <link href="https://cdn.reflowhq.com/v1/toolkit.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <ul class="nav shadow-sm d-flex justify-content-center">
+      <li class="nav-item"><a class="nav-link" href="index.html">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+    </ul>
+
+    <div class="container pt-5">
+      <div id="product-comp" data-reflow-type="product" data-reflow-shoppingcart-url="./cart.html"></div>
+    </div>
+
+    <script>
+
+      // Getting the product id from the URL and setting data-reflow-product 
+      // attribute dynamically.
+
+      document.querySelector("#product-comp").dataset.reflowProduct = new URL(
+        location.href
+      ).searchParams.get("product");
+    </script>
+
+    <script src="https://cdn.reflowhq.com/v1/toolkit.min.js" data-reflow-store="267418190" defer></script>
+  </body>
+</html>
