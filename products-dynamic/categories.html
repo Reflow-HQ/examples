@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product Page</title>
+    <title>All Products</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.1/dist/litera/bootstrap.min.css" />
     <link href="https://cdn.reflowhq.com/v1/toolkit.min.css" rel="stylesheet" />
   </head>
 
   <body>
-
     <ul class="nav shadow-sm d-flex justify-content-center">
       <li class="nav-item"><a class="nav-link" href="index.html">Products</a></li>
-      <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="categories.html">Categories</a></li>
       <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
     </ul>
-
     <div class="container pt-5">
-      <div id="product-comp" data-reflow-type="product" data-reflow-shoppingcart-url="./cart.html"></div>
+
+      <h2 class="mb-4">Categories</h2>
+      <div data-reflow-type="category-list" data-reflow-category-link="./index.html?category={id}"></div>
+
     </div>
-
-    <script>
-
-      // Getting the product id from the URL and setting data-reflow-product 
-      // attribute dynamically.
-
-      document.querySelector("#product-comp").dataset.reflowProduct = new URL(
-        location.href
-      ).searchParams.get("product");
-    </script>
 
     <script src="https://cdn.reflowhq.com/v1/toolkit.min.js" data-reflow-store="267418190" defer></script>
   </body>
