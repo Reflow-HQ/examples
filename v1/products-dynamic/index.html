@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>All Products</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.1/dist/litera/bootstrap.min.css" />
+    <link href="https://cdn.reflowhq.com/v1/toolkit.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <ul class="nav shadow-sm d-flex justify-content-center">
+      <li class="nav-item"><a class="nav-link fw-bold text-black">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+      <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+    </ul>
+    <div class="container pt-5">
+
+      <h2 class="mb-4">Products</h2>
+      <div id="product-list-comp" data-reflow-type="product-list" data-reflow-perpage="8" data-reflow-order="price_desc" 
+        data-reflow-layout="cards" data-reflow-product-link="./product.html?product={id}"></div>
+
+    </div>
+
+    <script>
+
+      // Getting the category id from the URL and setting data-reflow-category 
+      // attribute dynamically.
+
+      document.querySelector("#product-list-comp").dataset.reflowCategory = new URL(
+        location.href
+      ).searchParams.get("category");
+    </script>
+
+    <script src="https://cdn.reflowhq.com/v1/toolkit.min.js" data-reflow-store="267418190" defer></script>
+  </body>
+</html>
