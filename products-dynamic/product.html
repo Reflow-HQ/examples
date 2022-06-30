@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Product Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.1/dist/litera/bootstrap.min.css" />
-    <link href="https://cdn.reflowhq.com/v1/toolkit.min.css" rel="stylesheet" />
+    <link href="https://cdn.reflowhq.com/v2/toolkit.min.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -19,7 +19,7 @@
 
     <div class="container pt-5">
       <!-- Since we don't pass a data-reflow-product parameter, the Product component will look for ?product=xxxx in the page URL. -->
-      <div data-reflow-type="product" data-reflow-shoppingcart-url="./cart.html"></div>
+      <div data-reflow-type="product" data-reflow-shoppingcart-url="./cart.html" data-reflow-category-link="./index.html?category={id}"></div>
 
       <h4 class="mt-5 mb-5">Similar Products</h4>
 
@@ -33,6 +33,6 @@
       </script>
     </div>
 
-    <script src="https://cdn.reflowhq.com/v1/toolkit.min.js" data-reflow-store="267418190" defer></script>
+    <script src="https://cdn.reflowhq.com/v2/toolkit.min.js" data-reflow-store="267418190" defer></script>
   </body>
 </html>
