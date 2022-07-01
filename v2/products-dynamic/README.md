@@ -4,7 +4,7 @@ This example demonstrates how to link components together to create a fully feat
 
 ## Dynamic Products
 
-The [Products](https://reflowtoolkit.github.io/examples/products-dynamic/index.html) example demonstrates how you can link a [Product List](https://reflowhq.com/docs/product-list.html) and a [Product](https://reflowhq.com/docs/product.html) component together, so that clicking an item in the list leads you to a full product page.
+The [Products](https://reflowtoolkit.github.io/examples/v2/products-dynamic/index.html) example demonstrates how you can link a [Product List](https://reflowhq.com/docs/product-list.html) and a [Product](https://reflowhq.com/docs/product.html) component together, so that clicking an item in the list leads you to a full product page.
 
 ### How it works
 
@@ -13,7 +13,7 @@ The [Products](https://reflowtoolkit.github.io/examples/products-dynamic/index.h
 
 ## Dynamic Categories
 
-In the [Categories](https://reflowtoolkit.github.io/examples/products-dynamic/categories.html) example you can learn how to connect a [Category List](https://reflowhq.com/docs/category-list.html) and a [Product List](https://reflowhq.com/docs/product-list.html) component together. This creates a navigation menu for browsing all categories and products from the store.
+In the [Categories](https://reflowtoolkit.github.io/examples/v2/products-dynamic/categories.html) example you can learn how to connect a [Category List](https://reflowhq.com/docs/category-list.html) and a [Product List](https://reflowhq.com/docs/product-list.html) component together. This creates a navigation menu for browsing all categories and products from the store.
 
 ### How it works
 
@@ -22,7 +22,7 @@ In the [Categories](https://reflowtoolkit.github.io/examples/products-dynamic/ca
 
 ## Shopping Cart
 
-The [Cart](https://reflowtoolkit.github.io/examples/products-dynamic/cart.html) example displays a shopping cart where you can see all the [Products](https://reflowhq.com/docs/product.html) that were added for purchase.
+The [Cart](https://reflowtoolkit.github.io/examples/v2/products-dynamic/cart.html) example displays a shopping cart where you can see all the [Products](https://reflowhq.com/docs/product.html) that were added for purchase.
 
 ### How it works
 
