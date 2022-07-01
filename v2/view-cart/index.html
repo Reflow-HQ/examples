@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.1/dist/litera/bootstrap.min.css" />
+    <link href="https://cdn.reflowhq.com/v2/toolkit.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="hstack gap-1 p-3 justify-content-center shadow-sm">
+      <div data-reflow-type="add-to-cart" data-reflow-product="108661429" data-reflow-show="button" data-reflow-addtocart-text="Add Product 1"></div>
+      <div data-reflow-type="add-to-cart" data-reflow-product="277093884" data-reflow-show="button" data-reflow-addtocart-text="Add Product 2"></div>
+      <div data-reflow-type="add-to-cart" data-reflow-product="13156819" data-reflow-show="button" data-reflow-addtocart-text="Add Product 3"></div>
+    </div>
+    
+    <div class="container pt-5 d-flex flex-column justify-content-center align-items-center">
+
+        <!-- Example with an SVG icon -->
+        <div data-reflow-type="view-cart" data-reflow-summary-type="sidebar" data-reflow-shoppingcart-url="../products-dynamic/cart.html" class="mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+          </svg>
+        </div>
+        
+        <!-- Example with a dropdown summary. -->
+        <div data-reflow-type="view-cart" data-reflow-summary-type="dropdown" data-reflow-summary-position="left" data-reflow-shoppingcart-url="../products-dynamic/cart.html">View Cart</div>
+    </div>
+
+    <script src="https://cdn.reflowhq.com/v2/toolkit.min.js" data-reflow-store="267418190" defer></script>
+  </body>
+</html>

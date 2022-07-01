@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.1/dist/litera/bootstrap.min.css" />
+    <link href="https://cdn.reflowhq.com/v1/toolkit.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <ul class="nav shadow-sm d-flex justify-content-center">
+      <li class="nav-item"><a class="nav-link" href="index.html">Products</a></li>
+      <li class="nav-item"><a class="nav-link" href="categories.html">Categories</a></li>
+      <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+    </ul>
+
+    <div class="container pt-5">
+      <!-- Since we don't pass a data-reflow-product parameter, the Product component will look for ?product=xxxx in the page URL. -->
+      <div data-reflow-type="product" data-reflow-shoppingcart-url="./cart.html" ></div>
+
+      <h4 class="mt-5 mb-5">Similar Products</h4>
+
+      <div id="similar-products" data-reflow-type="product-list" data-reflow-perpage="4" data-reflow-product-link="./product.html?product={id}" data-reflow-show="image,name,price" data-reflow-layout="cards">
+      </div>
+
+      <script>
+          // Set Product List's data-reflow-similar-to attribute dynamically from the product id in the URL
+          let prodID = new URL(location.href).searchParams.get('product');
+          document.querySelector('#similar-products').dataset.reflowSimilarTo = prodID;
+      </script>
+    </div>
+
+    <script src="https://cdn.reflowhq.com/v1/toolkit.min.js" data-reflow-store="267418190" defer></script>
+  </body>
+</html>
