@@ -8,7 +8,7 @@ This repo contains a few examples which demonstrate what is possible with the [R
 
 Demonstrates how the [Product](https://reflowhq.com/docs/product.html) component renders a page, complete with a media gallery and add to cart button.
 
-[Demo](https://reflowtoolkit.github.io/examples/v2/product-full/index.html) | [Source Code](./product-full)
+[Demo](https://reflow-hq.github.io/examples/v2/product-full/index.html) | [Source Code](./v2/product-full)
 
 ## Product List
 
@@ -16,7 +16,7 @@ Demonstrates how the [Product](https://reflowhq.com/docs/product.html) component
 
 This example which shows a straightforward use of the [Product List](https://reflowhq.com/docs/product-list.html) component.
 
-[Demo](https://reflowtoolkit.github.io/examples/v2/products-list/index.html) | [Source Code](./products-list)
+[Demo](https://reflow-hq.github.io/examples/v2/products-list/index.html) | [Source Code](./v2/products-list)
 
 ## Shopping Cart
 
@@ -24,7 +24,7 @@ This example which shows a straightforward use of the [Product List](https://ref
 
 Shows how easy it is to combine a [Shopping Cart](https://reflowhq.com/docs/shopping-cart.html) and [Add to Cart](https://reflowhq.com/docs/add-to-cart.html) buttons.
 
-[Demo](https://reflowtoolkit.github.io/examples/v2/cart/index.html) | [Source Code](./cart)
+[Demo](https://reflow-hq.github.io/examples/v2/cart/index.html) | [Source Code](./v2/cart)
 
 ## Dynamic Product
 
@@ -32,4 +32,4 @@ Shows how easy it is to combine a [Shopping Cart](https://reflowhq.com/docs/shop
 
 Demonstrates a full online store, by combining a Shopping Cart, Product List and Product. More info is available in the `products-dynamic` folder.
 
-[Demo](https://reflowtoolkit.github.io/examples/v2/products-dynamic/index.html) | [Source Code](./products-dynamic)
+[Demo](https://reflow-hq.github.io/examples/v2/products-dynamic/index.html) | [Source Code](./v2/products-dynamic)
